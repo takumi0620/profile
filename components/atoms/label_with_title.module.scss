@@ -1,3 +1,5 @@
+@import "styles/colors";
+
 .title {
   margin-right: 1rem;
   font-weight: bold;
@@ -5,5 +7,6 @@
 }
 
 .content {
+  color: $accent_color;
   white-space: pre-wrap;
 }

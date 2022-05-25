@@ -1,0 +1,22 @@
+@import "styles/colors";
+
+.container {
+  padding: 1rem;
+  color: $accent_color;
+}
+
+.title {
+  color: $accent_color;
+  text-align: center;
+}
+
+.salt {
+  display: flex;
+  &_image {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+  }
+}
