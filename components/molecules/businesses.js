@@ -65,7 +65,7 @@ SDカードに収められた研究用装置で撮影された画像を取り込
             start="2018年4月"
             end="2019年8月"
             architecture={{
-              frameWork: "-",
+              frameWork: "Appium",
               language: "Objective-C, Swift, SQL, Ruby",
               db: "SQLite",
               versionControll: "Git, SourceTree, backlog"
