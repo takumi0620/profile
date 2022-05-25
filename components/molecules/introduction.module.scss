@@ -1,4 +1,5 @@
 @import "styles/colors";
+@import "styles/size";
 
 .container {
   padding: 1rem;
@@ -24,4 +25,10 @@
 
 .social {
   margin-top: 0.5rem;
+}
+
+@media (max-width: $sp_max_width) {
+  .salt {
+    flex-flow: column;
+  }
 }

@@ -26,7 +26,7 @@ export default function Introduction() {
           <ReferenceImageLink url="https://zenn.dev/takumi0620" image="zenn.svg" />
         </div>
       </span>
-      <h3 className={Styles.title}>個人開発記録</h3>
+      <h3 className={Styles.title}>個人開発</h3>
       <div className={Styles.salt}>
         <Link href="https://salt-cooking.fun/">
           <a rel="noreferrer" target="_blank">

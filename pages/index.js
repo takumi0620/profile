@@ -6,9 +6,13 @@ import Businesses from "components/molecules/businesses";
 export default function Home() {
   return (
     <>
-      <Introduction />
-      <WorkHistories />
-      <Businesses />
+      <div className={Styles.container}>
+        <Introduction />
+      </div>
+      <div className={Styles.container}>
+        <WorkHistories />
+        <Businesses />
+      </div>
     </>
   )
 }
