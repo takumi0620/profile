@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import Styles from "components/molecules/introduction.module.scss";
 import LabelWithTitle from "components/atoms/label_with_title";
+import ReferenceImageLink from "components/atoms/reference_image_link";
 import Business from "components/molecules/business";
 
 export default function Introduction() {
@@ -18,7 +19,12 @@ export default function Introduction() {
         <LabelWithTitle title="今後の展望" content={`自分の興味のあるドメインのサービスの開発に携わっていたいです。
 仕事の質は人生の質に直結すると考えているので自分が興味のあるサービスの開発に携わりたいです。
 
-開発自体は好きなのでプライベートでもおこなっていますし、新しい技術への関心もあるので日々色々な技術に触れるようにしていますが、特定の言語やFWに固執しているわけではなくサービスを開発/リリースすることそのものに重きを置いて業務を行いたいと考えます。`} />
+開発自体は好きなのでプライベートでもおこなっていますし、新しい技術への関心もあるので日々色々な技術に触れるようにしていますが、特定の言語やFWに固執しているわけではなくサービスを開発/リリースすることそのものに重きを置いて業務を行っています。`} />
+        <div className={Styles.social}>
+          <ReferenceImageLink url="https://github.com/takumi0620" image="github.svg" />
+          <ReferenceImageLink url="https://qiita.com/takumi0620" image="qiita.png" />
+          <ReferenceImageLink url="https://zenn.dev/takumi0620" image="zenn.svg" />
+        </div>
       </span>
       <h3 className={Styles.title}>個人開発記録</h3>
       <div className={Styles.salt}>
@@ -39,8 +45,11 @@ export default function Introduction() {
           }}
           description={`料理のレシピ記録webサービスです。
 レシピの投稿や画像登録、devise token authを用いた認証機能、youtubeの動画情報のインポート機能やレシピ検索/いいね/お気に入り機能等を実装しました。
+
 プラットフォームはNext.jsで実装したフロントエンド部分はvercelにデプロイし、railsで実装したバックエンドはawsのec2へデプロイしています。
-docker composeでフロントエンド用、バックエンド用、DB用のコンテナを立てて開発しています`}
+
+docker composeでフロントエンド用、バックエンド用、DB用のコンテナを立てて開発しています。
+使用している技術は全て独学でキャッチアップしました。`}
           referenceProperty={{
               url: "https://salt-cooking.fun/",
               label: "webサイト"

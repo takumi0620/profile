@@ -1,0 +1,12 @@
+@import "styles/colors";
+.link {
+  margin: 0 0.3rem;
+  .image {
+    padding: 0.1rem;
+    background-color: $accent_color;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+  }
+}

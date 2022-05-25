@@ -12,6 +12,7 @@
 
 .salt {
   display: flex;
+  align-items: center;
   &_image {
     cursor: pointer;
     border-radius: 50%;
@@ -19,4 +20,8 @@
     height: 16rem;
     object-fit: cover;
   }
+}
+
+.social {
+  margin-top: 0.5rem;
 }
