@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+      // jsconfig.jsがある階層がファイルimportのパスのベースとなる
+      "baseUrl": "./"
+  }
+}

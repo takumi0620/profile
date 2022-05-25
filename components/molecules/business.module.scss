@@ -1,0 +1,15 @@
+@import "styles/colors";
+
+.container {
+  padding: 1rem;
+  color: $accent_color;
+  margin: 0.5rem;
+
+  .title {
+    border-bottom: solid 1px $accent_color;
+  }
+
+  .contents {
+    padding: 1rem;
+  }
+}
