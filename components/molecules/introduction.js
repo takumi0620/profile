@@ -9,15 +9,21 @@ export default function Introduction() {
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>自己紹介</h2>
+      <div className={Styles.profile_container}>
+        <img className={Styles.profile_image} src="takumi.jpeg" />
+      </div>
       <span>
         <LabelWithTitle title="氏名" content="山本 卓実" />
         <LabelWithTitle title="生年月日" content="1992/06/20" />
         <LabelWithTitle title="得意業務" content="Androidアプリ開発" />
         <LabelWithTitle title="保有資格" content={`データベーススペシャリスト試験
 応用情報技術者試験
+基本情報技術者試験
+ITパスポート
 日商簿記2級`} />
-        <LabelWithTitle title="今後の展望" content={`自分の興味のあるドメインのサービスの開発に携わっていたいです。
-仕事の質は人生の質に直結すると考えているので自分が興味のあるサービスの開発に携わりたいです。
+        <LabelWithTitle title="今後の展望" content={`自分の興味のあるドメインのサービスの開発に携わっていたい
+
+仕事の質は人生の質に直結すると考えているので自分が興味のあるドメインのサービスの開発に携わっていたいです。
 
 開発自体は好きなのでプライベートでもおこなっていますし、新しい技術への関心もあるので日々色々な技術に触れるようにしていますが、特定の言語やFWに固執しているわけではなくサービスを開発/リリースすることそのものに重きを置いて業務を行っています。`} />
         <div className={Styles.social}>

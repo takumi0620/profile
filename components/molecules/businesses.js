@@ -1,5 +1,5 @@
 import Styles from "components/molecules/businesses.module.scss";
-import Business from "components/molecules/business";
+import IconWithBusiness from "components/molecules/icon_with_business";
 
 export default function Businesses() {
   return (
@@ -7,7 +7,8 @@ export default function Businesses() {
       <h2 className={Styles.title}>職務経歴</h2>
       <ul>
         <li>
-          <Business
+          <IconWithBusiness
+            icon="web.svg"
             title="えきねっと開発プロジェクト"
             start="2015年8月"
             end="2016年3月"
@@ -21,7 +22,8 @@ export default function Businesses() {
             />
         </li>
         <li>
-          <Business
+          <IconWithBusiness
+            icon="web.svg"
             title="全日空向け旅行予約システムの大規模刷新プロジェクト"
             start="2016年4月"
             end="2017年9月"
@@ -39,45 +41,50 @@ export default function Businesses() {
         </li>
 
         <li>
-        <Business
-          title="研究者向け画像加工、閲覧を行うwebサービス開発"
-          start="2017年10月"
-          end="2018年3月"
-          architecture={{
-            frameWork: "jquery, Spring Framework",
-            language: "HTML, css, Java, SQL, JavaScript, groovy script",
-            db: "Oracle",
-            versionControll: "Git"
-          }}
-          description="基本設計、詳細設計、実装、単体テスト、機能テストまで行なっていました。"
-          />
+          <IconWithBusiness
+            icon="web.svg"
+            title="研究者向け画像加工、閲覧を行うwebサービス開発"
+            start="2017年10月"
+            end="2018年3月"
+            architecture={{
+              frameWork: "jquery, Spring Framework",
+              language: "HTML, css, Java, SQL, JavaScript, groovy script",
+              db: "Oracle",
+              versionControll: "Git"
+            }}
+            description={`基本設計、詳細設計、実装、単体テスト、機能テストまで行なっていました。
+SDカードに収められた研究用装置で撮影された画像を取り込み、web上で閲覧/拡大/縮小できる機能をjavascriptで実装しました。
+`}
+            />
         </li>
 
         <li>
-        <Business
-          title="ゴルフスコア管理iOSアプリのマイグレーション"
-          start="2018年4月"
-          end="2019年8月"
-          architecture={{
-            frameWork: "-",
-            language: "Objective-C, Swift, SQL, Ruby",
-            db: "SQLite",
-            versionControll: "Git, SourceTree, backlog"
-          }}
-          description={`Objective-Cで実装されていたiOS版アプリの全てのコードをSwiftで置き換えました。
+          <IconWithBusiness
+            icon="apple.svg"
+            title="ゴルフスコア管理iOSアプリのマイグレーション"
+            start="2018年4月"
+            end="2019年8月"
+            architecture={{
+              frameWork: "-",
+              language: "Objective-C, Swift, SQL, Ruby",
+              db: "SQLite",
+              versionControll: "Git, SourceTree, backlog"
+            }}
+            description={`Objective-Cで実装されていたiOS版アプリの全てのコードをSwiftで置き換えました。
 我々が参画した時点でテストコード等がない状態かつ設計書もなくお客様もアプリの仕様の全てを把握しているとは言えない状況でした。
 そのような状況で本プロジェクトが開始されたので、デグレーションを起こしていないことを担保する方法を考える必要がありました。
 そこでAppiumを使ったテスト用フレームワークを実装し、一つのクライアントコードでAndroid/iOS両方の動作確認ができるようにし、同じシナリオをAndroid/iOS両方で動作させて動作結果に差がないことを確認できるようにしました。
 `}
-          referenceProperty={{
-            url: "https://apps.apple.com/jp/app/gdo%E3%82%B9%E3%82%B3%E3%82%A2-%E3%82%B4%E3%83%AB%E3%83%95%E3%81%AE%E3%82%B9%E3%82%B3%E3%82%A2%E7%AE%A1%E7%90%86-gps%E3%83%9E%E3%83%83%E3%83%97%E3%81%A7%E8%B7%9D%E9%9B%A2%E3%82%92%E8%A8%88%E6%B8%AC/id807341818",
-            label: "App Store"
-          }}
-          />
+            referenceProperty={{
+              url: "https://apps.apple.com/jp/app/gdo%E3%82%B9%E3%82%B3%E3%82%A2-%E3%82%B4%E3%83%AB%E3%83%95%E3%81%AE%E3%82%B9%E3%82%B3%E3%82%A2%E7%AE%A1%E7%90%86-gps%E3%83%9E%E3%83%83%E3%83%97%E3%81%A7%E8%B7%9D%E9%9B%A2%E3%82%92%E8%A8%88%E6%B8%AC/id807341818",
+              label: "App Store"
+            }}
+            />
         </li>
 
         <li>
-          <Business
+          <IconWithBusiness
+            icon="web.svg"
             title="ゴルフコンペ用webサービスの開発"
             start="2018年4月"
             end="現在"
@@ -99,7 +106,8 @@ export default function Businesses() {
         </li>
 
         <li>
-          <Business
+          <IconWithBusiness
+            icon="android.svg"
             title="ゴルフスコア管理Androidアプリの保守、機能追加"
             start="2018年4月"
             end="現在"
@@ -141,17 +149,18 @@ activityパッケージの配下にfragmentパッケージがある等々無秩�
         </li>
 
         <li>
-        <Business
-          title="武蔵小山商店街向けAndroidアプリ開発"
-          start="2018年5月"
-          end="現在"
-          architecture={{
-            frameWork: "-",
-            language: "kotlin, SQL",
-            db: "SQLite",
-            versionControll: "Git, SourceTree, backlog"
-          }}
-          description={`商店街向けクーポン、ポイント開発の新規開発のAndroidを全て担当しました。
+          <IconWithBusiness
+            icon="android.svg"
+            title="武蔵小山商店街向けAndroidアプリ開発"
+            start="2018年5月"
+            end="現在"
+            architecture={{
+              frameWork: "-",
+              language: "kotlin, SQL",
+              db: "SQLite",
+              versionControll: "Git, SourceTree, backlog"
+            }}
+            description={`商店街向けクーポン、ポイント開発の新規開発のAndroidを全て担当しました。
 
 ・GPSを使ったクーポンが取得できるクエストの実行
 ・QRコードを使ったレジでのポイント消費機能
@@ -161,11 +170,11 @@ activityパッケージの配下にfragmentパッケージがある等々無秩�
 
 などの機能を実装しました
 `}
-          referenceProperty={{
-            url: "https://play.google.com/store/apps/details?id=jp.co.golfdigest.reserve.score",
-            label: "Google Play"
-          }}
-          />
+            referenceProperty={{
+              url: "https://play.google.com/store/apps/details?id=jp.co.golfdigest.reserve.score",
+              label: "Google Play"
+            }}
+            />
         </li>
       </ul>
       </>

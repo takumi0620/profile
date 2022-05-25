@@ -1,6 +1,7 @@
 @import "styles/colors";
 
 .link {
+  display: inline-block;
   background-color: $link;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;

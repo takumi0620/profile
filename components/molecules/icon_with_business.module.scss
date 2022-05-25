@@ -1,0 +1,14 @@
+@import "styles/colors";
+
+.container {
+  border-bottom: solid 1px $main_theme_color_light;
+  margin-bottom: 1rem;
+}
+
+.image_container {
+  text-align: center;
+  .image {
+    width: 4rem;
+    height: 4rem;
+  }
+}

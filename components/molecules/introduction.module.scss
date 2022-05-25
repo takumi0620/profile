@@ -5,6 +5,15 @@
   padding: 1rem;
   color: $accent_color;
 }
+.profile_container {
+  text-align: center;
+  .profile_image {
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+  }
+}
 
 .title {
   color: $accent_color;
