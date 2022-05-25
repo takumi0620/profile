@@ -1,0 +1,11 @@
+@import "styles/colors";
+
+.container {
+  color: $accent_color;
+  text-align: center;
+}
+
+.link {
+  color: $link;
+  font-weight: bold;
+}

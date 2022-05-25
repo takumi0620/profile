@@ -1,15 +1,19 @@
+import Styles from "pages/index.module.scss";
+import WorkHistories from "components/molecules/work_histories";
 import Business from "components/molecules/business";
 
 export default function Home() {
   return (
     <div>
+      <WorkHistories />
+      <h2 className={Styles.title}>職務経歴</h2>
       <Business
         title="えきねっと開発プロジェクト"
         start="2015年8月"
         end="2016年3月"
         architecture={{
           frameWork: ".net framework",
-          language: "C#, ASP.net, SQL",
+          language: "html, C#, ASP.net, SQL",
           db: "SQLServer",
           versionControll: "Team Foundation Server"
         }}
@@ -37,7 +41,7 @@ export default function Home() {
         start="2017年10月"
         end="2018年3月"
         architecture={{
-          frameWork: "Spring Framework",
+          frameWork: "jquery, Spring Framework",
           language: "HTML, Java, SQL, JavaScript, groovy script",
           db: "Oracle",
           versionControll: "Git"
@@ -76,7 +80,10 @@ export default function Home() {
           db: "MySQL",
           versionControll: "Git, SourceTree, backlog"
         }}
-        description="web上でゴルフコンペを行うためのサービスを開発しました。お客様との要件定義や仕様の調整、設計、実装、テストを担当しました。"
+        description={`web上でゴルフコンペを行うためのサービスを開発しました。
+お客様との要件定義や仕様の調整、設計、実装、テストを担当しました。
+データストアから日次バッチでデータを取り込み、それを集計して自分のランキングやベストスコアを表示するサービスです。
+`}
         referenceProperty={{
           url: "https://score.golfdigest.co.jp/onlinecompe",
           label: "Webサイト"
@@ -93,7 +100,30 @@ export default function Home() {
           db: "SQLite",
           versionControll: "Git, SourceTree, backlog"
         }}
-        description=""
+        description={`私がAndroidのメインプログラマになってからGoogle playでの平均評価を4.2から4.4へ上げることができました。
+
+以前はオフショアでアプリを開発していたようであり、開発会社と緊密なコミュニケーションが取れているとは言えない状況でコードの品質も良いとは言い難くバグも多くありましたが改善することができました。
+
+・パッケージ構成の見直し。
+activityパッケージの配下にfragmentパッケージがある等々無秩序な状態だったパッケージ構成を整理した。
+お客様の社内で使用されている用語を参考に、プロダクトマネージャとのMTGで交わされる会話がそのままパッケージ、クラスに関連づけられるよう意識した。
+・jetpackのViewModelを用いてアーキテクチャをMVVMにした
+・javaオンリーで実装されていたものをkotlinへマイグレーションした
+・ListViewやRelativeLayoutなどレガシーなViewをRecyclerViewやConstraintLayoutへ置き換えた
+・全ての非同期処理がasync taskで行われていたが、kotlinのcoroutineやjetpackのlivedataを使って非同期処理を行なうようにした
+・GPSを使ったコースマップ機能を開発した
+・Appiumを用いた回帰テストができる環境作り
+
+平均評価が上がった要因は様々な理由がありますが、ただタスクを消化するだけでなくプロダクトマネージャへ仕様の提案やアニメーションのクオリティが良い等、私が参画した影響も大きいと自負しています。
+
+お客様、デザイン会社、我々開発チームの三者で機能を設計/実装していくことが多いのですが、デザイン会社が作成したモックアップをお客様と共にレビューし、開発者目線でさまざまな提案を行っています。
+
+・Androidというプラットフォームにおけるデザインガイドラインに沿ったUIであるか
+・サポート予定の画面サイズで破綻するデザインになっていないか
+・他社のアプリ/サービスに触れている経験から、その機能に適したUIはどのようなものがあるか
+
+現在リリースされている機能の中にも私の提案が採用されたUIがあります
+`}
         referenceProperty={{
           url: "https://play.google.com/store/apps/details?id=jp.co.golfdigest.reserve.score",
           label: "Google Play"
@@ -110,7 +140,16 @@ export default function Home() {
           db: "SQLite",
           versionControll: "Git, SourceTree, backlog"
         }}
-        description="Objective-Cで実装されていたiOS版アプリの全てのコードをSwiftで置き換えました。"
+        description={`商店街向けクーポン、ポイント開発の新規開発のAndroidを全て担当しました。
+
+・GPSを使ったクーポンが取得できるクエストの実行
+・QRコードを使ったレジでのポイント消費機能
+・ログイン機能（Facebookログイン、Googleログイン、Twitterログイン、Eメールログイン）
+・SMSを使った二要素認証機能
+・クーポンの使用
+
+などの機能を実装しました
+`}
         referenceProperty={{
           url: "https://play.google.com/store/apps/details?id=jp.co.golfdigest.reserve.score",
           label: "Google Play"
