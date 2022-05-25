@@ -6,7 +6,7 @@ export default function Architecture({frameWork, language, versionControll}) {
       <div>
         <LabelWithTitle title="FW / ライブラリ" content={frameWork} />
         <LabelWithTitle title="言語" content={language} />
-        <LabelWithTitle title="バージョン管理ツール" content={versionControll} />
+        <LabelWithTitle title="バージョン管理" content={versionControll} />
       </div>
     </div>
   );
