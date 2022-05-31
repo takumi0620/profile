@@ -142,7 +142,7 @@ activityパッケージの配下にfragmentパッケージがある等々無秩�
 現在リリースされている機能の中にも私の提案が採用されたUIがあります
 `}
             referenceProperty={{
-              url: "https://play.google.com/store/apps/details?id=jp.co.golfdigest.reserve.score",
+              url: "https://play.google.com/store/apps/details?id=jp.co.golfdigest.reserve.score&hl=ja&gl=US",
               label: "Google Play"
             }}
             />
