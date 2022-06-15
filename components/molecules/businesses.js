@@ -171,7 +171,7 @@ activityパッケージの配下にfragmentパッケージがある等々無秩�
 などの機能を実装しました
 `}
             referenceProperty={{
-              url: "https://play.google.com/store/apps/details?id=jp.co.golfdigest.reserve.score",
+              url: "https://play.google.com/store/apps/details?id=com.palm.palmapp_androidos",
               label: "Google Play"
             }}
             />
