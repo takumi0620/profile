@@ -18,8 +18,6 @@ export default function Introduction() {
         <LabelWithTitle title="得意業務" content="Androidアプリ開発" />
         <LabelWithTitle title="保有資格" content={`データベーススペシャリスト試験
 応用情報技術者試験
-基本情報技術者試験
-ITパスポート
 日商簿記2級`} />
         <LabelWithTitle title="今後の展望" content={`自分の興味のあるドメインのサービスの開発に携わっていたい
 
