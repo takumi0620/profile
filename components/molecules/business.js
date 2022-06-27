@@ -1,4 +1,5 @@
 import LabelWithTitle from "components/atoms/label_with_title";
+import BusinessContents from "components/molecules/business_contents";
 import Architecture from "components/molecules/architecture";
 import ReferenceLink from "components/atoms/reference_link";
 
@@ -10,6 +11,7 @@ export default function Business({
   end,
   architecture,
   description,
+  mainContents,
   referenceProperty = null
 }) {
   return (
@@ -17,7 +19,7 @@ export default function Business({
       <span className={Styles.title}>{title}</span>
       <div className={Styles.contents}>
         <LabelWithTitle title="期間" content={`${start} - ${end}`}/>
-        <LabelWithTitle title="業務内容" content={description}/>
+        <BusinessContents title="業務内容" description={description} mainContents={mainContents} />
         <Architecture frameWork={architecture.frameWork} language={architecture.language} versionControll={architecture.versionControll} />
       </div>
       {referenceProperty && <ReferenceLink url={referenceProperty.url} label={referenceProperty.label} />}

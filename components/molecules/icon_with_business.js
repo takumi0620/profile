@@ -8,6 +8,7 @@ export default function IconWithBusiness({
   end,
   architecture,
   description,
+  mainContents,
   referenceProperty = null
 }) {
   return (
@@ -15,7 +16,7 @@ export default function IconWithBusiness({
       <div className={Styles.image_container}>
         <img className={Styles.image} src={icon} />
       </div>
-      <Business title={title} start={start} end={end} architecture={architecture} description={description} referenceProperty={referenceProperty} />
+      <Business title={title} start={start} end={end} architecture={architecture} description={description} mainContents={mainContents} referenceProperty={referenceProperty} />
     </div>
   );
 }
